@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "108194645200",
+    "project_id": "moviest-58ecb",
+    "storage_bucket": "moviest-58ecb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108194645200:android:e1e3c4e090caed692b4ad5",
+        "android_client_info": {
+          "package_name": "com.greedy.moviest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108194645200-8m2jdv3ifqv1r41lado8oe4fgcne2buj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZz3aINnVphUPFOAt4qjDgG23ScMwyGU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108194645200-8m2jdv3ifqv1r41lado8oe4fgcne2buj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

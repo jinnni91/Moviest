@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="110dp"
+                                                   android:background="@drawable/bottom_stroke">
+
+    <TextView
+            android:text="영화코드"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCode"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            android:layout_marginStart="20dp"/>
+    <TextView
+            android:text="제목"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textCode"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            android:layout_marginStart="48dp"/>
+    <TextView
+            android:text="내용"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle"
+            android:layout_marginTop="4dp"
+            android:id="@+id/textContent"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            android:layout_marginStart="48dp"/>
+    <TextView
+            android:text="영화코드"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"/>
+    <TextView
+            android:text="제목"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="24dp"/>
+    <TextView
+            android:text="내용"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="24dp"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            android:id="@+id/btnDelete"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

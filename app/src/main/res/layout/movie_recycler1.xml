@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="300dp">
+
+    <TextView
+            android:text="audiAcc"
+            android:textColor="@color/black"
+            android:layout_width="63dp"
+            android:layout_height="25dp" android:id="@+id/audiAcc1"
+            tools:ignore="MissingConstraints"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="212dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+    <TextView
+            android:text="movieNm"
+            android:textColor="@color/black"
+            android:layout_width="250dp"
+            android:id="@+id/movieNm1"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/openDt1" android:layout_marginBottom="20dp"/>
+    <TextView
+            android:text="openDt"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/openDt1"
+            tools:ignore="MissingConstraints"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="192dp"
+            app:layout_constraintBottom_toTopOf="@+id/audiAcc1" android:layout_marginBottom="52dp"/>
+    <TextView
+            android:text="rank"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" android:id="@+id/rank1"
+            tools:ignore="MissingConstraints"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="292dp" app:layout_constraintBottom_toTopOf="@+id/movieNm1"
+            android:layout_marginBottom="48dp"/>
+    <TextView
+            android:text="순위 : "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textRank1"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/rank1" android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp" app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintBottom_toTopOf="@+id/textmovieNm1" app:layout_constraintVertical_bias="0.115"/>
+    <TextView
+            android:text="영화제목 : "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textmovieNm1"
+            android:textSize="20sp" app:layout_constraintEnd_toStartOf="@+id/movieNm1" android:layout_marginEnd="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.682" app:layout_constraintBottom_toTopOf="@+id/textopenDt1"
+            android:layout_marginBottom="52dp"/>
+    <TextView
+            android:text="개봉일 : "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textopenDt1"
+            tools:ignore="MissingConstraints"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/openDt1" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.081" app:layout_constraintBottom_toTopOf="@+id/textaudiAc1"
+            android:layout_marginBottom="52dp" android:layout_marginStart="30dp"/>
+    <TextView
+            android:text="관객수 : "
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textaudiAc1"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/audiAcc1"
+            app:layout_constraintHorizontal_bias="0.553" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+
+    <ImageView
+            android:layout_width="89dp"
+            android:layout_height="81dp"
+            android:src="@drawable/film_img"
+            android:id="@+id/filmimg"
+            tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="28dp" android:layout_marginTop="16dp"/>
+    <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/pop_img"
+            android:id="@+id/watchmovieImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="28dp"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@color/purple_200" tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
